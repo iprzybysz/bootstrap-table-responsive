@@ -1,0 +1,29 @@
+{
+  "name": "@mdbootstrap/bootstrap-table-responsive",
+  "version": "1.0.0",
+  "description": "Responsive table built with the latest Bootstrap 5. Responsive tables allow you to aggregate a huge amount of data and present it in a clear and orderly way.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdbootstrap/bootstrap-table-responsive.git"
+  },
+  "keywords": [
+    "table responsive",
+    "tables",
+    "responsive",
+    "breakpoint specific",
+    "scroll",
+    "fixed header",
+    "dark variant",
+    "pricing"
+  ],
+  "author": "Igor Przybysz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mdbootstrap/bootstrap-table-responsive/issues"
+  },
+  "homepage": "https://mdbootstrap.com/docs/standard/extended/table-responsive/"
+}

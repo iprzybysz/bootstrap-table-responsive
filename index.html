@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Material Design for Bootstrap</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="css/mdb.min.css" />
+
+  <!-- Prism -->
+  <link rel="stylesheet" href="https://mdbgo.io/mikolaj-smolenski/mdb5-demo-pro/dev/css/new-prism.css" />
+  <!-- Custom styles -->
+  <style>
+    main {
+      padding-left: 240px;
+    }
+    .header, .fixed-thead{
+      position: sticky;
+      top: 0;           
+    }
+    #table-scroll-example {
+      max-height: 200px; 
+      overflow: scroll;
+    }
+    .btn-tag {
+      background-color: #ECEFF1;
+      text-transform: capitalize !important;
+      margin-bottom: 10px;
+      box-shadow: none;
+    }
+        
+    .btn-tag:hover {
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .25), 0 3px 10px 5px rgba(0, 0, 0, 0.05) !important;
+    }
+  </style>
+</head>
+
+<body data-mdb-spy="scroll" data-mdb-target="#scrollspy1" data-mdb-offset="1" class="scrollspy-example">
+  <!-- YOUR WORK HERE -->
+  <main>
+    <div class="container my-5">
+      <div class="row">
+        <!-- Left column -->
+        <div class="col-md-10 mb-4 mb-md-0">
+          <!--Section: Docs content-->
+          <section>
+            <!--Section: Introduction-->
+            <section id="section-introduction">
+              <!-- Main title -->
+              <h2 class="h1 fw-bold">Table responsive</h2>
+
+              <!-- Seo title -->
+              <h1 class="h6">Bootstrap 5 Table responsive component</h1>
+
+              <div class="row">
+                <!-- Description -->
+                <p class="my-3">
+                  Responsive table built with the latest Bootstrap 5. Responsive tables allow you to aggregate a huge amount of data and present it in a clear and orderly way. 
+                </p>
+              </div>
+            </section>
+            <!--Section: Introduction-->
+
+            <hr class="my-5" />
+
+            <!--Section: how it works-->
+            <section id="how-it-works">
+              <h2 class="my-5 mb-3">How it works</h2>
+              
+              <!-- Description -->
+              <p>
+                Responsive tables allow tables to be scrolled horizontally with ease. Make any table responsive across all viewports by wrapping a <code>.table</code> with <code>.table-responsive</code>. Or, pick a maximum breakpoint with which to have a responsive table up to by using <code>.table-responsive{-sm|-md|-lg|-xl|-xxl}</code>.
+              </p>
+              <p class="note note-warning">
+                <strong>Vertical clipping/truncation:</strong>
+                <br>
+                Responsive tables make use of <code>overflow-y: hidden</code>, which clips off any content that goes beyond the bottom or top edges of the table. In particular, this can clip off dropdown menus and other third-party widgets.
+              </p>
+            </section>
+
+            <!--Section: how it works-->
+
+            <hr class="my-5" />
+
+            <!--Section: basic example-->
+            <section id="section-basic-example">
+              <!-- Section title -->
+              <h2 class="my-5 mb-2">Basic example</h2>
+
+              <!--Description-->
+              <p>
+                Across every breakpoint, use <code>.table-responsive</code> for horizontally scrolling tables.
+              </p>
+
+              <!-- Section: Demo -->
+              <section class="border p-4 text-center w-100 rounded-top">
+
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+              </section>
+
+              <div class="p-4 text-center border border-top-0 mobile-hidden rounded-bottom">
+                <a class="btn btn-link px-3 collapsed" data-mdb-toggle="collapse" href="#basic-example" role="button"
+                  aria-expanded="false" aria-controls="example9" data-ripple-color="hsl(0, 0%, 67%)">
+                  <i class="fas fa-code me-md-2"></i>
+                  <span class="d-none d-md-inline-block">
+                    Show code
+                  </span>
+                </a>
+
+                <a class="btn btn-link px-3 " data-ripple-color="hsl(0, 0%, 67%)">
+                  <i class="fas fa-file-code me-md-2 pe-none"></i>
+                  <span class="d-none d-md-inline-block export-to-snippet pe-none">
+                    Edit in sandbox
+                  </span>
+                </a>
+              </div>
+
+              <!-- Section: Demo -->
+
+              <!-- Section: Code -->
+              <section class="my-3 collapse" id="basic-example">
+
+                <mdbsnippet>
+                  <!-- HTML -->
+                  <code data-lang="html" data-name="HTML">
+
+                    <div class="table-responsive">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                  </code>
+
+                </mdbsnippet>
+
+              </section>
+              <!-- Section: Code -->
+
+            </section>
+            <!--Section: basic example-->
+
+            <!--Section: breakpoint specific example-->
+            <section id="section-breakpoint-specific-example">
+              <!-- Section title -->
+              <h2 class="my-5 mb-2">Breakpoint specific</h2>
+
+              <!--Description-->
+              <p>
+                Use <code>.table-responsive{-sm|-md|-lg|-xl|-xxl}</code> as needed to create responsive tables up to a particular breakpoint. From that breakpoint and up, the table will behave normally and not scroll horizontally.
+              </p>
+              <p>
+                <strong>These tables may appear broken until their responsive styles apply at specific viewport widths.</strong>
+              </p>
+
+              <!-- Section: Demo -->
+              <section class="border p-4 text-center mb-4 rounded-5">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+
+              <section class="border p-4 text-center mb-4 rounded-5">
+                <div class="table-responsive-sm">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+
+              <section class="border p-4 text-center mb-4 rounded-5">
+                <div class="table-responsive-md">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+
+              <section class="border p-4 text-center mb-4 rounded-5">
+                <div class="table-responsive-lg">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+
+              <section class="border p-4 text-center mb-4 rounded-5">
+                <div class="table-responsive-xl">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+
+              <section class="border p-4 text-center mb-4 rounded-5">
+                <div class="table-responsive-xxl">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+
+              <div class="p-4 text-center border border mobile-hidden rounded">
+                <a class="btn btn-link px-3 collapsed" data-mdb-toggle="collapse" href="#breakpoint-specific-example" role="button"
+                  aria-expanded="false" aria-controls="example9" data-ripple-color="hsl(0, 0%, 67%)">
+                  <i class="fas fa-code me-md-2"></i>
+                  <span class="d-none d-md-inline-block">
+                    Show code
+                  </span>
+                </a>
+
+                <a class="btn btn-link px-3 " data-ripple-color="hsl(0, 0%, 67%)">
+                  <i class="fas fa-file-code me-md-2 pe-none"></i>
+                  <span class="d-none d-md-inline-block export-to-snippet pe-none">
+                    Edit in sandbox
+                  </span>
+                </a>
+              </div>
+
+              <!-- Section: Demo -->
+
+              <!-- Section: Code -->
+              <section class="my-3 collapse" id="breakpoint-specific-example">
+
+                <mdbsnippet>
+                  <!-- HTML -->
+                  <code data-lang="html" data-name="HTML">
+
+                    <div class="table-responsive">
+                      <table class="table"></table>
+                    </div>
+                    
+                    <div class="table-responsive-sm">
+                      <table class="table"></table>
+                    </div>
+                    
+                    <div class="table-responsive-md">
+                      <table class="table"></table>
+                    </div>
+                    
+                    <div class="table-responsive-lg">
+                      <table class="table"></table>
+                    </div>
+                    
+                    <div class="table-responsive-xl">
+                      <table class="table"></table>
+                    </div>
+                    
+                    <div class="table-responsive-xxl">
+                      <table class="table"></table>
+                    </div>
+
+                  </code>
+
+                </mdbsnippet>
+
+              </section>
+              <!-- Section: Code -->
+
+            </section>
+            <!--Section: breakpoint specific example-->
+
+            <!--Section: scroll example-->
+            <section id="section-scroll-example">
+              <!-- Section title -->
+              <h2 class="my-5 mb-2">Scroll</h2>
+
+              <!--Description-->
+              <p>
+                Add <code>max-height</code>/<code>max-width</code> and <code>overflow: scroll</code> to enable <a href="https://mdbootstrap.com/docs/standard/layout/vertical-alignment/">vertical</a>/<a href="https://mdbootstrap.com/docs/standard/layout/horizontal-alignment/">horizontal</a> scrolling.
+              </p>
+
+              <!-- Section: Demo -->
+              <section class="border p-4 text-center w-100 rounded-top">
+
+                <div id="table-scroll-example" class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">5</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+              </section>
+
+              <div class="p-4 text-center border border-top-0 mobile-hidden rounded-bottom">
+                <a class="btn btn-link px-3 collapsed" data-mdb-toggle="collapse" href="#scroll-example" role="button"
+                  aria-expanded="false" aria-controls="example9" data-ripple-color="hsl(0, 0%, 67%)">
+                  <i class="fas fa-code me-md-2"></i>
+                  <span class="d-none d-md-inline-block">
+                    Show code
+                  </span>
+                </a>
+
+                <a class="btn btn-link px-3 " data-ripple-color="hsl(0, 0%, 67%)">
+                  <i class="fas fa-file-code me-md-2 pe-none"></i>
+                  <span class="d-none d-md-inline-block export-to-snippet pe-none">
+                    Edit in sandbox
+                  </span>
+                </a>
+              </div>
+
+              <!-- Section: Demo -->
+
+              <!-- Section: Code -->
+              <section class="my-3 collapse" id="scroll-example">
+
+                <mdbsnippet>
+                  <!-- HTML -->
+                  <code data-lang="html" data-name="HTML">
+
+                    <div class="table-responsive">
+                      <table class="table"></table>
+                    </div>
+
+                  </code>
+
+                  <code data-lang="css" data-name="CSS">
+
+                    .table-responsive {
+                      max-height: 200px; 
+                      overflow: scroll;
+                    }
+
+                  </code>
+
+                </mdbsnippet>
+
+              </section>
+              <!-- Section: Code -->
+
+            </section>
+            <!--Section: scroll example-->
+
+            <!--Section: fixed header example-->
+            <section id="section-fixed-header-example">
+              <!-- Section title -->
+              <h2 class="my-5 mb-2">Fixed header</h2>
+
+              <!--Description-->
+              <p>
+                Add <code>position: sticky</code> and <code>top: 0</code> to <code>thead</code> and <code>th</code> elements.
+              </p>
+
+              <!-- Section: Demo -->
+              <section class="border p-4 text-center w-100 rounded-top">
+
+                <div class="table-responsive"style="max-height: 200px; overflow: scroll;">
+                  <table class="table">
+                    <thead class="fixed-thead bg-light">
+                      <tr>
+                        <th class="header" scope="col">#</th>
+                        <th class="header" scope="col">Heading</th>
+                        <th class="header" scope="col">Heading</th>
+                        <th class="header" scope="col">Heading</th>
+                        <th class="header" scope="col">Heading</th>
+                        <th class="header" scope="col">Heading</th>
+                        <th class="header" scope="col">Heading</th>
+                        <th class="header" scope="col">Heading</th>
+                        <th class="header" scope="col">Heading</th>
+                        <th class="header" scope="col">Heading</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">5</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+              </section>
+
+              <div class="p-4 text-center border border-top-0 mobile-hidden rounded-bottom">
+                <a class="btn btn-link px-3 collapsed" data-mdb-toggle="collapse" href="#fixed-header-example" role="button"
+                  aria-expanded="false" aria-controls="example9" data-ripple-color="hsl(0, 0%, 67%)">
+                  <i class="fas fa-code me-md-2"></i>
+                  <span class="d-none d-md-inline-block">
+                    Show code
+                  </span>
+                </a>
+
+                <a class="btn btn-link px-3 " data-ripple-color="hsl(0, 0%, 67%)">
+                  <i class="fas fa-file-code me-md-2 pe-none"></i>
+                  <span class="d-none d-md-inline-block export-to-snippet pe-none">
+                    Edit in sandbox
+                  </span>
+                </a>
+              </div>
+
+              <!-- Section: Demo -->
+
+              <!-- Section: Code -->
+              <section class="my-3 collapse" id="fixed-header-example">
+
+                <mdbsnippet>
+                  <!-- HTML -->
+                  <code data-lang="html" data-name="HTML">
+
+                    <div class="table-responsive">
+                      <table class="table"></table>
+                    </div>
+
+                  </code>
+
+                  <code data-lang="css" data-name="CSS">
+
+                    th, thead{
+                      position: sticky;
+                      top: 0;
+                    }
+                  </code>
+
+                </mdbsnippet>
+
+              </section>
+              <!-- Section: Code -->
+
+            </section>
+            <!--Section: scroll example-->
+
+            
+
+            <!--Section: dark variant example-->
+            <section id="section-dark-variant-example">
+              <!-- Section title -->
+              <h2 class="my-5 mb-2">Dark variant</h2>
+
+              <!--Description-->
+              <p>
+                Add <code>.table-dark</code> to the <code>.table</code> for <a href="https://mdbootstrap.com/docs/standard/extended/dark-mode/">dark mode</a>.
+              </p>
+
+              <!-- Section: Demo -->
+              <section class="border p-4 text-center w-100 rounded-top">
+
+                <div class="table-responsive">
+                  <table class="table table-dark">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+              </section>
+
+              <div class="p-4 text-center border border-top-0 mobile-hidden rounded-bottom">
+                <a class="btn btn-link px-3 collapsed" data-mdb-toggle="collapse" href="#dark-variant-example" role="button"
+                  aria-expanded="false" aria-controls="example9" data-ripple-color="hsl(0, 0%, 67%)">
+                  <i class="fas fa-code me-md-2"></i>
+                  <span class="d-none d-md-inline-block">
+                    Show code
+                  </span>
+                </a>
+
+                <a class="btn btn-link px-3 " data-ripple-color="hsl(0, 0%, 67%)">
+                  <i class="fas fa-file-code me-md-2 pe-none"></i>
+                  <span class="d-none d-md-inline-block export-to-snippet pe-none">
+                    Edit in sandbox
+                  </span>
+                </a>
+              </div>
+
+              <!-- Section: Demo -->
+
+              <!-- Section: Code -->
+              <section class="my-3 collapse" id="dark-variant-example">
+
+                <mdbsnippet>
+                  <!-- HTML -->
+                  <code data-lang="html" data-name="HTML">
+
+                    <div class="table-responsive">
+                      <table class="table table-dark"></table>
+                    </div>
+
+                  </code>
+
+                </mdbsnippet>
+
+              </section>
+              <!-- Section: Code -->
+
+            </section>
+            <!--Section: dark variant example-->
+
+            <!--Section: pricing example-->
+            <section id="section-pricing-example">
+              <!-- Section title -->
+              <h2 class="my-5 mb-2">Pricing</h2>
+
+              <!--Description-->
+              <p>
+                Here's an example of responsive pricing table.
+              </p>
+
+              <!-- Section: Demo -->
+              <section class="border p-4 text-center w-100 rounded-top">
+
+                <div class="table-responsive">
+                  <table class="table table-striped text-successtable-border border-light">
+                    <thead class="border-light">
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col"><strong>Basic</strong></th>
+                        <th scope="col"><strong>Standard</strong></th>
+                        <th scope="col"><strong>Premium</strong></th>
+                        <th scope="col"><strong>Managed</strong></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">HDD Storage</th>
+                        <td>700 MB</td>
+                        <td>1,5 GB</td>
+                        <td>50 GB</td>
+                        <td>up to 5T</i></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Web Server</th>
+                        <td><i class="fas fa-check"></i></td>
+                        <td><i class="fas fa-check"></i></td>
+                        <td><i class="fas fa-check"></i></td>
+                        <td><i class="fas fa-check"></i></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Database</th>
+                        <td>-</td>
+                        <td>Optional</td>
+                        <td><i class="fas fa-check"></i></td>
+                        <td><i class="fas fa-check"></i></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">DNS</th>
+                        <td>-</td>
+                        <td>-</td>
+                        <td><i class="fas fa-check"></i></td>
+                        <td><i class="fas fa-check"></i></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Backups</th>
+                        <td>-</td>
+                        <td>-</td>
+                        <td><i class="fas fa-check"></i></td>
+                        <td><i class="fas fa-check"></i></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Tech Support</th>
+                        <td>None</td>
+                        <td>35$/incident</td>
+                        <td>15$/incident</td>
+                        <td>24/7 included</td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td class="fw-bold">Free</td>
+                        <td class="fw-bold">$99/mo</td>
+                        <td class="fw-bold">$179/mo</td>
+                        <td class="fw-bold"><a href>Contact us</a></td>
+                      </tr>
+                      <tr>
+                        <th class=""></th>
+                        <th class=""><button class="btn btn-primary">Sign-up</button></th>
+                        <th class=""><button class="btn btn-primary">Buy Now</button></th>
+                        <th class=""><button class="btn btn-primary">Buy Now</button></th>
+                        <th class=""></th>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+              </section>
+
+              <div class="p-4 text-center border border-top-0 mobile-hidden rounded-bottom">
+                <a class="btn btn-link px-3 collapsed" data-mdb-toggle="collapse" href="#pricing-example" role="button"
+                  aria-expanded="false" aria-controls="example9" data-ripple-color="hsl(0, 0%, 67%)">
+                  <i class="fas fa-code me-md-2"></i>
+                  <span class="d-none d-md-inline-block">
+                    Show code
+                  </span>
+                </a>
+
+                <a class="btn btn-link px-3 " data-ripple-color="hsl(0, 0%, 67%)">
+                  <i class="fas fa-file-code me-md-2 pe-none"></i>
+                  <span class="d-none d-md-inline-block export-to-snippet pe-none">
+                    Edit in sandbox
+                  </span>
+                </a>
+              </div>
+
+              <!-- Section: Demo -->
+
+              <!-- Section: Code -->
+              <section class="my-3 collapse" id="pricing-example">
+
+                <mdbsnippet>
+                  <!-- HTML -->
+                  <code data-lang="html" data-name="HTML">
+
+                    <div class="table-responsive">
+                      <table class="table table-striped text-successtable-border border-light">
+                        <thead class="border-light">
+                          <tr>
+                            <th scope="col"></th>
+                            <th scope="col"><strong>Basic</strong></th>
+                            <th scope="col"><strong>Standard</strong></th>
+                            <th scope="col"><strong>Premium</strong></th>
+                            <th scope="col"><strong>Managed</strong></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">HDD Storage</th>
+                            <td>700 MB</td>
+                            <td>1,5 GB</td>
+                            <td>50 GB</td>
+                            <td>up to 5T</i></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Web Server</th>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Database</th>
+                            <td>-</td>
+                            <td>Optional</td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">DNS</th>
+                            <td>-</td>
+                            <td>-</td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Backups</th>
+                            <td>-</td>
+                            <td>-</td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Tech Support</th>
+                            <td>None</td>
+                            <td>35$/incident</td>
+                            <td>15$/incident</td>
+                            <td>24/7 included</td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td class="fw-bold">Free</td>
+                            <td class="fw-bold">$99/mo</td>
+                            <td class="fw-bold">$179/mo</td>
+                            <td class="fw-bold"><a href>Contact us</a></td>
+                          </tr>
+                          <tr>
+                            <th></th>
+                            <th><button class="btn btn-primary">Sign-up</button></th>
+                            <th><button class="btn btn-primary">Buy Now</button></th>
+                            <th><button class="btn btn-primary">Buy Now</button></th>
+                            <th></th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                  </code>
+
+                </mdbsnippet>
+
+              </section>
+              <!-- Section: Code -->
+
+            </section>
+            <!--Section: pricing example-->
+
+          </section>
+          <!--Section: Docs content-->
+
+          <hr class="my-5">
+
+          <section id="section-related-resources">
+
+            <h2>Related resources</h2>
+
+            <!--Chips with links-->
+            <div class="justify-content-start text-start w-100 my-5">
+
+              <a target="_blank" href="https://mdbootstrap.com/docs/standard/data/tables/" class="btn btn-tag btn-rounded"
+                data-mdb-close="true">
+                Tables</a>
+
+              <a href="https://mdbootstrap.com/docs/standard/tools/builders/table/" class="btn btn-tag btn-rounded" data-mdb-close="true">
+                  <i class="fas fa-cogs me-2"></i> 
+                  Table generator</a>
+              
+              <a href="https://mdbootstrap.com/docs/standard/data/tables/examples-and-customization/" class="btn btn-tag btn-rounded"
+                data-mdb-close="true">
+                Examples & Customization</a>
+
+              <a href="https://mdbootstrap.com/docs/standard/data/datatables/" class="btn btn-tag btn-rounded"
+                data-mdb-close="true">
+                Datatables</a>
+
+              <a href="https://mdbootstrap.com/docs/standard/plugins/table-editor/" class="btn btn-tag btn-rounded"
+                data-mdb-close="true">
+                Table editor</a>
+
+              <a href="https://mdbootstrap.com/docs/standard/extended/table-filter/" class="btn btn-tag btn-rounded"
+                data-mdb-close="true">
+                Table Filter</a>
+
+              <a href="https://mdbootstrap.com/docs/standard/tools/builders/datatables/" class="btn btn-tag btn-rounded" data-mdb-close="true">
+                  <i class="fas fa-cogs me-2"></i> 
+                  Datatables builder</a>
+
+              <a target="_blank" href="https://www.youtube.com/watch?v=9zHuZXMhMrA&amp;ab_channel=Keepcoding" class="btn btn-tag btn-rounded" data-mdb-close="true">
+                  <i class="fab fa-youtube me-2"></i> 
+                  Bootstrap Table Tutorial</a>
+
+              <a href="https://mdbootstrap.com/docs/standard/layout/vertical-alignment/" class="btn btn-tag btn-rounded"
+                data-mdb-close="true">
+                Vertical alignment</a>
+
+              <a href="https://mdbootstrap.com/docs/standard/layout/horizontal-alignment/" class="btn btn-tag btn-rounded"
+                data-mdb-close="true">
+                Horizontal alignment</a>
+
+            </div>
+
+          </section>
+
+        </div>
+        <!-- Left column -->
+
+        <!-- Right column -->
+        <div class="col-md-2 mb-4 mb-md-0">
+          <style>
+            /* Styles required only for the example above */
+            .scrollspy-example {
+              position: relative;
+              height: 200px;
+              overflow: auto;
+            }
+          </style>
+          <!-- Scrollspy -->
+          <div id="scrollspy1" class="sticky-top">
+            <ul class="nav flex-column nav-pills menu-sidebar">
+              <!-- Link -->
+              <li class="nav-item">
+                <a class="nav-link active" href="#section-introduction">Introduction</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section-basic-example">Basic example</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section-breakpoint-specific-example">Breakpoint specific</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section-scroll-example">Scroll</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section-fixed-header-example">Fixed header</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section-dark-variant-example">Dark variant</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section-pricing-example">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section-related-resources">Related resources</a>
+              </li>
+
+              <!-- Link -->
+            </ul>
+          </div>
+          <!-- Scrollspy -->
+        </div>
+        <!-- Right column -->
+      </div>
+    </div>
+  </main>
+  <!-- YOUR WORK HERE -->
+
+  <!-- Prism -->
+  <script type="text/javascript" src="https://mdbgo.io/mikolaj-smolenski/mdb5-demo-pro/dev/js/new-prism.js"></script>
+  <script type="text/javascript"
+    src="https://mdbgo.io/mikolaj-smolenski/mdb5-demo-pro/dev/js/dist/mdbsnippet.min.js"></script>
+  <!-- MDB -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Custom scripts -->
+  <script type="text/javascript"></script>
+</body>
+
+</html>
