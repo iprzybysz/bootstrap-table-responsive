@@ -75,11 +75,11 @@ Check out [Bootstrap Table responsive Documentation](https://mdbootstrap.com/doc
 
 ## More examples
 ### Breakpoint specific:
-[![Bootstrap Table responsive #1](https://user-images.githubusercontent.com/108793661/179177266-653b0dfc-e40f-4815-8b44-705652da8634.png)] (https://mdbootstrap.com/docs/standard/extended/table-responsive/#section-breakpoint-specific-example)
+[![Bootstrap 5 Table responsive #1](https://user-images.githubusercontent.com/108793661/179179490-a4c0edf8-aba7-40ae-ba75-812523c9a95c.png)](https://mdbootstrap.com/docs/standard/extended/table-responsive/#section-breakpoint-specific-example)
 ### Scroll
-[![Bootstrap Table responsive #2](https://user-images.githubusercontent.com/108793661/179177466-00973a4b-8039-4626-8dfb-7514b193edbb.png)] (https://mdbootstrap.com/docs/standard/extended/table-responsive/#section-scroll-example)
+[![Bootstrap 5 Table responsive #2](https://user-images.githubusercontent.com/108793661/179179601-ce53c7f1-640f-487c-b3b4-6511fc1f4172.png)](https://mdbootstrap.com/docs/standard/extended/table-responsive/#section-scroll-example)
 ### Fixed header
-[![Bootstrap Table responsive #3](https://user-images.githubusercontent.com/108793661/179177624-2d79795f-f7fa-4cf7-bc0c-7ef050dd8749.png)] (https://mdbootstrap.com/docs/standard/extended/table-responsive/#section-fixed-header-example)
+[![Bootstrap 5 Table responsive #3](https://user-images.githubusercontent.com/108793661/179179686-5700cc74-4ace-4ed8-af11-0f9e1f464602.png)](https://mdbootstrap.com/docs/standard/extended/table-responsive/#section-fixed-header-example)
 
 You can find other examples [here](https://mdbootstrap.com/docs/standard/extended/table-responsive/).
 
